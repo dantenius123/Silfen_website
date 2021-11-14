@@ -1,0 +1,325 @@
+@font-face {
+  font-family: Roboto bold;
+  src: url(Fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(Fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.desktopnavbar {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  z-index: 2;
+}
+
+.desktopnavbar ul {
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.icons ul {
+  margin-right: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+
+li a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.desktopnavbar li:hover {
+  scale: 1.1;
+}
+
+.desktopnavbar li:hover {
+  scale: 1.1;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  grid-column: 3;
+}
+
+#basket,
+#heart,
+#search,
+#login {
+  margin-right: 1.7vw;
+}
+
+.silfen {
+  justify-self: center;
+  grid-column: 2;
+}
+
+.silfen img {
+  height: 24px;
+  margin-top: 1.3vw;
+  margin-bottom: 1.3vw;
+}
+
+#basket {
+  height: 17px;
+  width: 17px;
+  margin-right: 3vw;
+}
+
+#search {
+  height: 17px;
+  width: 17px;
+}
+
+#login {
+  height: 17px;
+  width: 17px;
+}
+
+#heart {
+  height: 17px;
+  width: 17px;
+}
+
+.denmark {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-right: 3vw;
+}
+
+/* vvvv-----------------  MOBILE NAVBAR SILFEN -----------------------vvvv */
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: block;
+}
+
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vw;
+  display: none;
+}
+
+.side-nav ul li {
+  border-bottom: 1px rgba(44, 37, 41, 0.14) solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#side-menu a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.lesserthansign {
+  padding-right: 5vw;
+}
+
+.lesserthansign1 {
+  padding-right: 5vw;
+}
+
+.lesserthansign2 {
+  padding-right: 5vw;
+}
+
+.lesserthansign3 {
+  padding-right: 5vw;
+}
+
+.lesserthansign:hover {
+  cursor: pointer;
+}
+
+#svgs {
+  display: none;
+}
+
+.width {
+  width: 100%;
+}
+
+.heighLi {
+  padding-bottom: 30vw;
+  transition: 0.5s;
+}
+
+li a:hover {
+  scale: 1.1;
+}
+
+.bluepartnavbar {
+  height: 34px;
+  background-color: #85b4d7;
+  padding-left: 2vw;
+  position: relative;
+  z-index: 2;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.text1 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.text2 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.text3 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.text4 {
+  position: absolute;
+  left: 0.2;
+  top: 20%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+}
+
+.rotate1 {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+
+.rotate2 {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-delay: 4.25s;
+}
+
+.rotate3 {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-delay: 8s;
+}
+
+.rotate4 {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-delay: 11.75s;
+}
+
+/*VIDEO --------------*/
+
+img {
+  max-width: 100%;
+}
+
+/* Make the video responsive */
+#videoBG {
+  object-fit: cover;
+  object-position: center; /* left bottom */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  filter: grayscale(100%);
+}
