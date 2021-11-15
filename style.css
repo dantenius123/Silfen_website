@@ -323,3 +323,9 @@ img {
   z-index: -100;
   filter: grayscale(100%);
 }
+
+#discover {
+  font-family: Roboto bold;
+  text-align: center;
+  margin-top: 20px;
+}
