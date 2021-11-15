@@ -329,3 +329,27 @@ img {
   text-align: center;
   margin-top: 20px;
 }
+
+
+
+
+
+
+/* for sustainable page */
+
+.headline{
+  display: flex; 
+  justify-content: right;
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+
+main{
+  margin: 40px;
+}
+
+.article1{
+  margin-top: 40px;
+  margin-right: 260px;
+  margin-left: 260px;
+}
