@@ -324,31 +324,118 @@ img {
   filter: grayscale(100%);
 }
 
-#discover {
-  font-family: Roboto bold;
-  text-align: center;
-  margin-top: 20px;
+/* content for page */
+#section_1 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30vh;
 }
 
+#discover {
+  font-family: Roboto bold;
+  font-size: 2em;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+}
 
+#section_2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
 
+#section_4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
 
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5vh;
+}
 
+.product_img {
+  grid-column: 1;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.product_name {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: flex-start;
+  align-self: center;
+  font-family: Roboto bold;
+  font-size: 1.2em;
+}
+
+.product_price {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: flex-end;
+  align-self: center;
+  font-family: Roboto bold;
+  font-size: 1.2em;
+}
+
+#section_3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 10px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+#section_5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 10px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60vh;
+  margin-top: 10vh;
+}
+
+#footer_img {
+  grid-row: 1;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
 
 /* for sustainable page */
 
-.headline{
-  display: flex; 
+.headline {
+  display: flex;
   justify-content: right;
   font-size: 80px;
   margin-bottom: 40px;
 }
 
-main{
+main {
   margin: 40px;
 }
 
-.article1{
+.article1 {
   margin-top: 40px;
   margin-right: 260px;
   margin-left: 260px;
